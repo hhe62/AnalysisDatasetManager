@@ -23,6 +23,20 @@ info = {
             "GetYaxis().SetTitleOffset": 1.2  
         }
     },
+
+    "CosTheta": {  
+        "Initialize": {  
+            "type": "TH1D",
+            "nbins": 20,
+            "xmin": -1,
+            "xmax": 1
+        },
+        "Attributes": {  
+            "GetXaxis().SetTitle": "cos theta",  
+            "GetYaxis().SetTitle": "Events/0.1",
+            "GetYaxis().SetTitleOffset": 1.2  
+        }
+    },
    "GenZ1Pt": {  
         "Initialize": {  
             "type": "TH1D",
@@ -124,6 +138,58 @@ info = {
         "Attributes": {  
             "GetXaxis().SetTitle": "Gen ZZ p_{T} [GeV]",  
             "GetYaxis().SetTitle": "Events / 25 GeV",
+            "GetYaxis().SetTitleOffset": 1.2
+        }
+    },
+    "GenZ1Energy": {  
+        "Initialize": {  
+            "type": "TH1D",
+            "nbins": 48,
+            "xmin": 0,
+            "xmax": 1200
+        },
+        "Attributes": {  
+            "GetXaxis().SetTitle": "Gen Z1 Energy [GeV]",  
+            "GetYaxis().SetTitle": "Events / 25 GeV",
+            "GetYaxis().SetTitleOffset": 1.2
+        }
+    },
+"GenZ2Energy": {  
+        "Initialize": {  
+            "type": "TH1D",
+            "nbins": 48,
+            "xmin": 0,
+            "xmax": 1200
+        },
+        "Attributes": {  
+            "GetXaxis().SetTitle": "Gen Z2 Energy [GeV]",  
+            "GetYaxis().SetTitle": "Events / 25 GeV",
+            "GetYaxis().SetTitleOffset": 1.2
+        }
+    },
+ "GenZ1Eta": {  
+        "Initialize": {  
+            "type": "TH1D",
+            "nbins": 12,
+            "xmin": -6,
+            "xmax": 6
+        },
+        "Attributes": {  
+            "GetXaxis().SetTitle": "Gen |#eta|_{Z1}",  
+            "GetYaxis().SetTitle": "Events",
+            "GetYaxis().SetTitleOffset": 1.2
+        }
+    },
+ "GenZ2Eta": {  
+        "Initialize": {  
+            "type": "TH1D",
+            "nbins": 12,
+            "xmin": -6,
+            "xmax": 6
+        },
+        "Attributes": {  
+            "GetXaxis().SetTitle": "Gen |#eta|_{Z2}",  
+            "GetYaxis().SetTitle": "Events",
             "GetYaxis().SetTitleOffset": 1.2
         }
     },
